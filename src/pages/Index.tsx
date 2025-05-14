@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,7 +17,7 @@ const Index = () => {
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/rizal-hero.jpg" 
+            src="/rizal-portrait.jpg" 
             alt="José Rizal" 
             className="w-full h-full object-cover historical-image"
             style={{ 
@@ -150,7 +151,7 @@ const Index = () => {
               title="Educational Journey" 
               description="Follow Rizal's educational path in the Philippines and abroad in Spain."
               link="/chapter3"
-              available={false}
+              available={true}
             />
             
             <ChapterCard 
@@ -198,7 +199,9 @@ const Index = () => {
               <ul className="space-y-2">
                 <li><Link to="/chapter1" className="text-gray-600 hover:text-primary">Chapter 1</Link></li>
                 <li><Link to="/chapter2" className="text-gray-600 hover:text-primary">Chapter 2</Link></li>
-                <li><Link to="#" className="text-gray-600 hover:text-primary">Resources</Link></li>
+                <li><Link to="/chapter3" className="text-gray-600 hover:text-primary">Chapter 3</Link></li>
+                <li><Link to="/chapter4" className="text-gray-600 hover:text-primary">Chapter 4</Link></li>
+                <li><Link to="/chapter5" className="text-gray-600 hover:text-primary">Chapter 5</Link></li>
               </ul>
             </div>
             
