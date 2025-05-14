@@ -1,20 +1,32 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Navbar from '@/components/Navbar';
 import ChapterCard from '@/components/ChapterCard';
-import { Book, BookOpen, Flag, History, Search } from 'lucide-react';
+import { Book, BookOpen, Flag, History } from 'lucide-react';
 
 const Index = () => {
   return (
     <>
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section with Rizal Image */}
       <section className="hero-section py-20 md:py-32 text-white relative">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/rizal-hero.jpg" 
+            alt="José Rizal" 
+            className="w-full h-full object-cover historical-image"
+            style={{ 
+              filter: 'brightness(0.4) sepia(0.3)',
+              objectPosition: 'center 30%' 
+            }}
+          />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Life & Works of José Rizal
