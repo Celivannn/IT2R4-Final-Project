@@ -25,16 +25,16 @@ const ChapterCard = ({ number, title, description, link, available = true }: Cha
             </span>
           )}
         </div>
-        <CardTitle className="text-xl mt-3">{title}</CardTitle>
+        <CardTitle className="text-xl mt-3 text-primary">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-700">{description}</p>
       </CardContent>
       <CardFooter>
         {available ? (
           <Link 
             to={link} 
-            className="flex items-center text-primary font-medium hover:underline"
+            className="flex items-center text-accent font-medium hover:underline"
           >
             Start Learning <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
