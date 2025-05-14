@@ -17,12 +17,12 @@ const Index = () => {
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/rizal-portrait.jpg" 
+            src="/lovable-uploads/f9ee7221-06ec-4331-a7f7-f9c9aaea98d7.png" 
             alt="José Rizal" 
             className="w-full h-full object-cover historical-image"
             style={{ 
               filter: 'brightness(0.4) sepia(0.3)',
-              objectPosition: 'center 30%' 
+              objectPosition: 'center center' 
             }}
           />
         </div>
